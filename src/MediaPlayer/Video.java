@@ -32,4 +32,20 @@ public class Video extends ElementoMultimediale implements Volume, Luminosita {
     public void abbassaLuminosita(int lum) {
         this.luminosita -= lum;
     }
+
+    @Override
+    public void play(int durata) {
+        String esclam = "";
+        for (int x = 0; x < volume; x++) {
+            esclam += "!";
+        }
+        String aster = "";
+        for (int z = 0; z < luminosita; z++) {
+            aster += "*";
+        }
+        for (int i = 0; i < durata; i++) {
+            System.out.println(this.getTitolo() + " " + esclam + " " + aster);
+        }
+
+    }
 }

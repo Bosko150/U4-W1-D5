@@ -10,6 +10,14 @@ public class Immagine extends ElementoMultimediale implements Luminosita {
         this.luminosita = luminosita;
     }
 
+    public void show() {
+        String img = "";
+        for (int i = 0; i < luminosita; i++) {
+            img += "*";
+        }
+        System.out.println(this.getTitolo() + " " + img);
+    }
+
     @Override
     public void alzaLuminosita(int lum) {
         this.luminosita += lum;
@@ -19,4 +27,5 @@ public class Immagine extends ElementoMultimediale implements Luminosita {
     public void abbassaLuminosita(int lum) {
         this.luminosita -= lum;
     }
+
 }

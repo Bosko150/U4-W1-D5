@@ -20,4 +20,16 @@ public class Audio extends ElementoMultimediale implements Volume {
         this.volume -= vol;
     }
 
+    @Override
+    public void play(int durata) {
+
+        String esclam = "";
+        for (int x = 0; x < volume; x++) {
+            esclam += "!";
+        }
+        for (int i = 0; i < durata; i++) {
+            System.out.println(this.getTitolo() + " " + esclam);
+        }
+    }
+
 }
