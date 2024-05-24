@@ -2,9 +2,9 @@ package interfaces;
 
 public interface Volume {
 
-    public void alzaVolume(int vol);
+    void alzaVolume(int vol);
 
-    public void abbassaVolume(int vol);
+    void abbassaVolume(int vol);
 
-    public void play(int durata);
+    void play(int durata);
 }

@@ -2,7 +2,7 @@ package interfaces;
 
 public interface Luminosita {
 
-    public void alzaLuminosita(int lum);
+    void alzaLuminosita(int lum);
 
-    public void abbassaLuminosita(int lum);
+    void abbassaLuminosita(int lum);
 }
