@@ -1,6 +1,6 @@
 package MediaPlayer;
 
-abstract class ElementoMultimediale {
+public abstract class ElementoMultimediale {
     private String titolo;
     private int durata;
 
