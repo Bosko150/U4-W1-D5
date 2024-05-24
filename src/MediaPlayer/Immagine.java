@@ -18,6 +18,14 @@ public class Immagine extends ElementoMultimediale implements Luminosita {
         System.out.println(this.getTitolo() + " " + img);
     }
 
+    public int getLuminosita() {
+        return luminosita;
+    }
+
+    public void setLuminosita(int luminosita) {
+        this.luminosita = luminosita;
+    }
+
     @Override
     public void alzaLuminosita(int lum) {
         this.luminosita += lum;

@@ -1,8 +1,8 @@
 package MediaPlayer;
 
 public abstract class ElementoMultimediale {
-    private String titolo;
-    private int durata;
+    final private String titolo;
+    final private int durata;
 
     public ElementoMultimediale(String titolo, int durata) {
         this.titolo = titolo;
@@ -18,15 +18,9 @@ public abstract class ElementoMultimediale {
         return titolo;
     }
 
-    public void setTitolo(String titolo) {
-        this.titolo = titolo;
-    }
 
     public int getDurata() {
         return durata;
     }
 
-    public void setDurata(int durata) {
-        this.durata = durata;
-    }
 }

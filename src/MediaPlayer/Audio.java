@@ -14,6 +14,10 @@ public class Audio extends ElementoMultimediale implements Volume {
         return volume;
     }
 
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+
     @Override
     public void alzaVolume(int vol) {
         this.volume += vol;
